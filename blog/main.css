@@ -1,0 +1,500 @@
+/* Global */
+html, body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  font-family: Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #99d;
+}
+
+a:visited {
+  color: #b4b4dd;
+}
+
+a:hover {
+  color: #d62;
+}
+
+
+div, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.text-body {
+  font-size: .95rem;
+  line-height: 1.5rem;
+}
+
+/* Don't let things get too wide */
+#banner #title-link,
+#top-nav-inner,
+#entries-widget,
+#footer {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+/* Banner title */
+#banner {
+  background-repeat: repeat-x;
+  background-image: url(https://persistent.info/blogger-files/banner-title-background.png);
+  background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-title-background.png) 1x, url(https://persistent.info/blogger-files/banner-title-background@2x.png) 2x);
+  background-image: image-set(url(https://persistent.info/blogger-files/banner-title-background.png) 1x, url(https://persistent.info/blogger-files/banner-title-background@2x.png) 2x);
+  height: 89px;
+}
+
+#title {
+  background-image: url(https://persistent.info/blogger-files/banner-title.png);
+  background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-title.png) 1x, url(https://persistent.info/blogger-files/banner-title@2x.png) 2x);
+  background-image: image-set(url(https://persistent.info/blogger-files/banner-title.png) 1x, url(https://persistent.info/blogger-files/banner-title@2x.png) 2x);
+  width: 526px;
+  height: 83px;
+  margin-left: 20px;
+}
+
+#title * {
+  display: none;
+}
+
+/* Top navigation */
+#top-nav {
+  background-image: url(https://persistent.info/blogger-files/banner-links-background.png);
+  background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-links-background.png) 1x, url(https://persistent.info/blogger-files/banner-links-background@2x.png) 2x);
+  background-image: image-set(url(https://persistent.info/blogger-files/banner-links-background.png) 1x, url(https://persistent.info/blogger-files/banner-links-background@2x.png) 2x);
+  border-style: solid;
+  border-width: 1px 0;
+  border-color: #666;
+  overflow: hidden;
+  height: 22px;
+  padding: 6px 0;
+}
+
+#banner-links {
+  margin: 0;
+  padding: 0 0 0 21px;
+}
+
+#banner-links li {
+  list-style-type: none;
+  display: inline;
+  padding: 0 0.75em 0 0;
+}
+
+#banner-links a {
+  color: #d62;
+  font-size: 16px;
+  font-family: Trebuchet MS, sans-serif;
+  font-weight: bold;
+}
+
+#banner-links a:hover {
+  color: #ed7836;
+}
+
+#banner-links #banner-subscribe-link {
+  padding-left: 19px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  background-image: url(https://persistent.info/blogger-files/banner-subscribe-icon.png);
+  background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-subscribe-icon.png) 1x, url(https://persistent.info/blogger-files/banner-subscribe-icon@2x.png) 2x);
+  background-image: image-set(url(https://persistent.info/blogger-files/banner-subscribe-icon.png) 1x, url(https://persistent.info/blogger-files/banner-subscribe-icon@2x.png) 2x);
+}
+
+#search-form {
+  float: right;
+  padding: 0 21px 0 0;
+}
+
+#search-form #query {
+  border: solid 1px #666;
+  padding: 2px;
+  width: 122px;
+}
+
+#search-form:not(:focus-within) #query::placeholder {
+  color: transparent;
+}
+
+#search-form #submit {
+  color: #d62;
+  background: #444;
+  border: solid 1px #666;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+
+@media screen and (max-width: 540px) {
+  #banner {
+    background-repeat: repeat-x;
+    background-image: url(https://persistent.info/blogger-files/banner-title-background-small.png);
+    background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-title-background-small.png) 1x, url(https://persistent.info/blogger-files/banner-title-background-small@2x.png) 2x);
+    background-image: image-set(url(https://persistent.info/blogger-files/banner-title-background-small.png) 1x, url(https://persistent.info/blogger-files/banner-title-background-small@2x.png) 2x);
+    height: 64px;
+  }
+
+  #title {
+    background-image: url(https://persistent.info/blogger-files/banner-title-small.png);
+    background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-title-small.png) 1x, url(https://persistent.info/blogger-files/banner-title-small@2x.png) 2x);
+    background-image: image-set(url(https://persistent.info/blogger-files/banner-title-small.png) 1x, url(https://persistent.info/blogger-files/banner-title-small@2x.png) 2x);
+    width: 375px;
+    height: 59px;
+    margin-left: 10px;
+  }
+
+  #top-nav {
+    background-image: url(https://persistent.info/blogger-files/banner-links-background-small.png);
+    background-image: -webkit-image-set(url(https://persistent.info/blogger-files/banner-links-background-small.png) 1x, url(https://persistent.info/blogger-files/banner-links-background-small@2x.png) 2x);
+    background-image: image-set(url(https://persistent.info/blogger-files/banner-links-background-small.png) 1x, url(https://persistent.info/blogger-files/banner-links-background-small@2x.png) 2x);
+  }
+
+  #banner-links {
+    padding-left: 11px;
+  }
+
+  /* Subscribe link is too prominent on small screens, users can rely on auto-discovery there */
+  #banner-links li:has(> #banner-subscribe-link) {
+    display: none;
+  }
+
+  #banner-subscribe-link {
+    display: none;
+  }
+
+  /* Make search input look like one of the banner links when not focused */
+  #search-form:not(:focus-within) #query {
+    width: 60px;
+    background: transparent;
+    border: 0;
+    appearance: none;
+    padding: 0;
+  }
+
+  #search-form:not(:focus-within) #query::placeholder {
+    color: #d62;
+    font-size: 16px;
+    font-family: Trebuchet MS, sans-serif;
+    font-weight: bold;
+  }
+
+  #search-form:not(:focus-within) #submit {
+    display: none;
+  }
+
+  #search-form {
+    padding-right: 11px;
+  }
+
+  #search-form:focus-within {
+    float: none;
+    margin-left: 10px;
+  }
+
+  #search-form:focus-within + #banner-links {
+    display: none;
+  }
+
+  #footer {
+    flex-direction: column;
+  }
+
+  #footer .footer-section {
+    margin-left: 21px;
+    margin-right: 21px;
+  }
+}
+
+/* Status message */
+#status-message {
+  margin-top: 1em;
+  text-align: center;
+  border-top: solid 1px #666;
+  border-bottom: solid 1px #666;
+  padding: 3px 0 3px 21px;
+  color: #ccc;
+  background: #444;
+}
+
+#status-message a {
+  color: #d52;
+  font-weight: bold;
+}
+
+/* Entries */
+#entries,
+.navigation,
+#blogger-footer {
+  margin: 0 21px;
+}
+
+#entries .navigation {
+  margin: 1em 0 0 0;
+}
+
+.entry {
+  margin: 1em 0;
+}
+
+.entry-title,
+#comments h4 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.entry-title a,
+.entry-title a:link,
+.entry-title a:visited {
+  color: #bbb;
+}
+
+.entry-title a:hover {
+  color: #ddd;
+}
+
+.entry-title a .perma-link-symbol {
+  display: none;
+  color: #d62;
+}
+
+
+.entry-title a:hover .perma-link-symbol {
+  display: inline;
+}
+
+.entry-label {
+  color: #666;
+}
+
+.entry-date,
+.entry-meta {
+  font-size: smaller;
+  color: #999;
+}
+
+.entry-date {
+  float: left;
+}
+
+.entry-meta {
+  text-align: right;
+}
+
+.entry-meta a {
+  color: #999;
+}
+
+.entry-meta a:hover {
+  color: #d62;
+}
+
+.entry-meta .entry-comments-link {
+  padding-left: 1em;
+}
+
+.entry-container {
+  margin-top: .25em;
+  border: solid 1px #666;
+  padding: 0 1em;
+  color: #ccc;
+  overflow: hidden;
+}
+
+.entry-body {
+  clear: both;
+}
+
+.entry-body img {
+  max-width: 100%;
+  height: auto;
+}
+
+.entry-body .footnotes {
+  /* !important is used since the footnotes element has an inline style (for
+    feed readers) with the color #aaa that looks better against a white
+    background, but we're rendering a dark gray background.
+  */
+  border-color: #555 !important;
+}
+
+/* Comments */
+#comments h4 {
+  margin: 1em 0 0 0;
+  color: #ccc;
+}
+
+#comments-block {
+  margin: 0;
+  color: #ccc;
+}
+
+.comment {
+  margin: 1em 0;
+}
+
+.comment-body {
+  background: #444;
+  padding: 0.25em;
+}
+
+.comment-footer {
+  background: #555;
+  padding: 0.25em;
+}
+
+.comment-footer img {
+  border: 0;
+}
+
+.comment-author {
+  padding-right: 0.5em;
+  border-right: solid 1px #777;
+}
+
+.comment-timestamp {
+  padding-left: 0.5em;
+}
+
+#comments h3 {
+  color: #ccc;
+}
+
+#comments #comment-iframe-container {
+  background: #444;
+  padding: 0.25em;
+}
+
+/* Navigation */
+.navigation {
+  overflow: hidden;
+  color: #ccc;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+.navigation a {
+  color: #d52;
+}
+
+#navigation-newer-link {
+  float: right;
+}
+
+/* Footer */
+#footer {
+  margin-top: 3em;
+  color: #ccc;
+  display: flex;
+  gap: 2em;
+  /* Offset by one pixel to hide the bottom when scrolled to the bottom */
+  position: relative;
+  top: 1px;
+}
+
+#footer .footer-section:first-child {
+  margin-left: 21px;
+}
+
+#footer .footer-section:last-child {
+  margin-right: 21px;
+}
+
+.footer-section-body {
+  margin-top: 0.25em;
+  border: solid 1px #666;
+  padding: 1em;
+}
+
+#footer h3 {
+  font-size: 1.1rem;
+  line-height: 1.75rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+#footer h4 {
+  font-size: .95rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+}
+
+#footer a {
+  color: #81cc32;
+}
+
+#footer-archives {
+  display: flex;
+}
+
+#footer-archives .section:first-child {
+  padding-right: 2em;
+  margin-right: 2em;
+  border-right: solid 1px #3d3d3d;
+}
+
+.year-archive {
+  margin: 0;
+  padding: 0;
+}
+
+.year-archive li {
+  list-style-type: none;
+  white-space: nowrap;
+}
+
+#about-me p:first-child {
+  margin-top: 0;
+}
+
+#about-me p:last-child {
+  margin-bottom: 0;
+}
+
+/* Projects Page */
+.page-body {
+  margin-bottom: 1em;
+}
+
+/* Years */
+.page-body h2 {
+  margin: 1em 0;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.page-body h2::before,
+.page-body h2::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px dashed #555;
+}
+
+.page-body h2::before {
+  margin-right: 0.5em;
+}
+
+.page-body h2::after {
+  margin-left: 0.5em;
+}
+
+/* Projects */
+.page-body .project {
+  overflow: hidden;
+}
+
+.page-body .project img {
+  float: right;
+  padding: 0 0 .5em .5em;
+}
+
+.page-body .project h3 {
+  font-size: medium;
+  font-weight: bold;
+}
